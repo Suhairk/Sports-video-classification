@@ -14,7 +14,7 @@ class LeNet:
 		model = Sequential()
 		inputShape = (height, width, depth)
 
-		# if we are using "channels first", update the input shape
+		# if we are use "channels first", update the input shape
 		if K.image_data_format() == "channels_first":
 			inputShape = (depth, height, width)
 
